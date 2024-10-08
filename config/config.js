@@ -8,7 +8,12 @@ MongoClient.set('useFindAndModify', true)
 MongoClient.set('useCreateIndex', true)
 MongoClient.set('useUnifiedTopology', true)
 MongoClient.set('useFindAndModify', false)
-const url = 'mongodb+srv://' + process.env.DB_USER_NAME + ':' + process.env.DB_PASSWORD + '@cluster0.4bfx8.mongodb.net/' + process.env.DB_NAME_DEV + '?authSource=admin&replicaSet=atlas-ncrtun-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true'
+
+const url = 'mongodb+srv://' + process.env.DB_USER_NAME + ':' + process.env.DB_PASSWORD + '@anryton-live.5yf83.mongodb.net/' + process.env.DB_NAME_DEV + '?authSource=admin&replicaSet=atlas-ncrtun-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true'
+
+
+
+//const url = 'mongodb+srv://' + process.env.DB_USER_NAME + ':' + process.env.DB_PASSWORD + '@cluster0.4bfx8.mongodb.net/' + process.env.DB_NAME_DEV + '?authSource=admin&replicaSet=atlas-ncrtun-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true'
 
 const mongodb = (payloadData) => {
     return new Promise(async(resolve, reject) => {
